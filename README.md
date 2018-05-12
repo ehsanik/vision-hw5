@@ -101,15 +101,7 @@ Turn in your plots in `Report.pdf`.
 python main.py --model CoolNet --epoch 150
 ```
 
-## 4. Data Processing ##
-
-The image normalization in `dataloder.py` is not done properly. Fix it.
-
-### 4.1. Question ###
-
-What are the correct values and how did you calculate them?
-
-## 4.2. Data Augmentation ##
+## 4. Data Augmentation ##
 
 Most of the popular computer vision datasets have tens of thousands of images. 
 Cifar-10 is a dataset of 60000 32x32 colour images in 10 classes, which can be relatively small in compare to ImageNet which has 1M images. 
