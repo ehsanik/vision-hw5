@@ -12,6 +12,7 @@ For this homework you need to turn in `models.py`, `dataloder.py` and a PDF file
 
 You can either use [official PyTorch tutorial](https://pytorch.org/), [Our tutorial(Still getting updated)](https://github.com/ehsanik/pytorch_installation) 
 or come to the workshop on Friday 11th, at 12pm in NAN181.
+You can find a tutorial for MNIST [here](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py), a sample network for MNIST [here](https://github.com/pytorch/examples/blob/master/mnist/main.py), and the PyTorch slides are posted on the website.
 
 ## 2. Find the best network ##
 
@@ -31,10 +32,11 @@ Note that you don't need to wait until the training is done to plot the progress
 Report the final plot for every model in your `Report.pdf` file. 
 Compare how fast the models converge and how is the test accuracy changing during training.
 
-## 2.1. Training a classifier using only one Fully connected Layer ##
+## 2.1. Training a classifier using only one fully connected Layer ##
 
 Implement a model to classify the images from Cifar-10 into ten categories using just one fully connected layer.
-Fill in the code for LazyNet in `models.py`. Run the model for 50 epoch and report the plots and accuracies 
+If you are new to PyTorch you may want to check out the tutorial on MNIST [here](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py).
+Fill in the code for LazyNet in `models.py`. Run the model for 50 epoch and report the plots and accuracies: 
 
 ```bash
 python main.py --model LazyNet --epochs 50
