@@ -27,8 +27,10 @@ class BaseModel(nn.Module):
         return optim.SGD(self.parameters(), lr=0.001)
 
     def adjust_learning_rate(self, optimizer, epoch, args):
-        lr = args.lr
-        # TODO: Implement decreasing learning rate's rules
+        lr = args.lr  # TODO: Implement decreasing learning rate's rules
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = lr
+       
 
 
 class LazyNet(BaseModel):
