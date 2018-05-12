@@ -32,9 +32,10 @@ Note that you don't need to wait until the training is done to plot the progress
 Report the final plot for every model in your `Report.pdf` file. 
 Compare how fast the models converge and how is the test accuracy changing during training.
 
+
 ## 2.1. Training a classifier using only one fully connected Layer ##
 
-Implement a model to classify the images from Cifar-10 into ten categories using just one fully connected layer.
+Implement a model to classify the images from Cifar-10 into ten categories using just one fully connected layer (Remember that fully connected layers are called Linear in PyTorch).
 If you are new to PyTorch you may want to check out the tutorial on MNIST [here](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py).
 Fill in the code for LazyNet in `models.py`. Run the model for 50 epoch and report the plots and accuracies: 
 
@@ -45,9 +46,9 @@ python main.py --model LazyNet --epochs 50
 Analyze the behavior of your model (how well does it work?, how fast does it train?, why do you think it's working/not working?) 
 and report the plots in your report file.
 
-## 2.2. Training a classifier using multiple fully connected Layer ##
+## 2.2. Training a classifier using multiple fully connected Layers ##
 
-Implement a model for the same classification task using multiple fully connected layer (not more than three).
+Implement a model for the same classification task using multiple fully connected layers. Start with a fully connected layer that maps the data from image size (32 * 32 * 3) to a vector of size 120, followed by another fully connected that reduces the size to 84 and finally a layer that maps the vector of size 84 to 10 classes.
 Fill in the code for BoringNet in `models.py`. Run the model for 50 epoch and report the plots and accuracies 
 
 ```bash
@@ -122,5 +123,5 @@ python3 main.py --epochs 200 --model CoolNet --lr 0.01
 
 ## 5. Change the loss function ##
 
-Try Mean Squared Error loss function instead of Cross Entropy and see how this affects the results and explain why you think this is happening. 
+Try Mean Squared Error loss instead of Cross Entropy and see how this affects the results and explain why you think this is happening. 
 
