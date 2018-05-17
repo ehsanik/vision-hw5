@@ -27,10 +27,10 @@ def train(net, dataloader, optimizer, criterion, epoch):
 
         # print statistics
         running_loss += loss.item()
+        total_loss += loss.item()
         if (i + 1) % 2000 == 0:    # print every 2000 mini-batches
             net.log('[%d, %5d] loss: %.3f' %
                   (epoch + 1, i + 1, running_loss / 2000))
-            total_loss += running_loss
             running_loss = 0.0
 
     net.log('Final Summary:   loss: %.3f' %
